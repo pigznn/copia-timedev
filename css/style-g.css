@@ -1,0 +1,45 @@
+/* 
+=======================
+FONTES LOCAIS
+=======================
+*/
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* 
+=========================
+VARIAVEIS DO TIME DEV
+=========================
+*/
+:root {
+    /* CORES */
+    --cor-texto: #f2f2f2;
+    --cor-texto2: #1A1A1A;
+
+    --cor-titulo: #03A63C;
+    --cor-destaque: #0CF25D;
+
+    --cor-borda: #f2f2f2;
+    --cor-fundo: #1A1A1A;
+    --cor-fundo2: #027333;
+}
+
+
+:root {
+    /* FONTES */
+    --fonte-titulo: "Montserrat", sans-serif;
+    --fonte-texto: "Poppins", sans-serif;
+}
+

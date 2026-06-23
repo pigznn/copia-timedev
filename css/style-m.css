@@ -1,0 +1,146 @@
+/* 
+=======================
+FONTES LOCAIS
+=======================
+*/
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* 
+=========================
+VARIAVEIS DO TIME DEV
+=========================
+*/
+:root {
+    /* CORES */
+    --cor-texto: #f2f2f2;
+    --cor-texto2: #1A1A1A;
+
+    --cor-titulo: #03A63C;
+    --cor-destaque: #0CF25D;
+
+    --cor-borda: #f2f2f2;
+    --cor-fundo: #1A1A1A;
+    --cor-fundo2: #027333;
+}
+
+
+:root {
+    /* FONTES */
+    --fonte-titulo: "Montserrat", sans-serif;
+    --fonte-texto: "Poppins", sans-serif;
+}
+
+#topo {
+    margin: 5px auto;
+    max-width:1250px;
+    height: 120px;
+    background-color: #1a1a1aa4;
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+}
+
+#topo h1 {
+    width: 65px;
+    height: 60px;
+    background-image: url(../assets/logo.svg);
+    margin: 30px ;
+    text-indent: -9999px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+#topo h2{
+    font-family: var(--fonte-texto);
+}
+
+#topo .menu a {
+    text-decoration: none;
+    font-family: var(--fonte-titulo);
+    color: var(--cor-texto);
+    font-size: 20px;
+    padding: 20px;
+}
+
+#topo .menu {
+    display: flex;
+    align-items: center;
+}
+
+#topo .menu ul{
+    display: flex;
+}
+
+#topo .redes_sociais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#topo .redes_sociais li {
+    margin: 0 10px;
+    max-height: 30px;
+    width: 30px;
+    background-color: var(--cor-fundo2);
+    border-radius: 15px;
+    border: none;
+} 
+
+#topo .redes_sociais img{
+    height: 30px ;
+    
+}
+
+#topo .redes_sociais a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    max-height: 30px;
+}
+
+#topo .redes_sociais .whatsapp{
+    margin-left: 200px;
+}
+
+#banner{
+    background-image: ;
+}
+
+#banner div {
+    margin: 0 auto;
+    max-width: 1500px;
+
+}
+
+#banner div h2 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-titulo);
+    font-size: 25px;
+}
+
+#banner div h1 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-titulo);
+    font-size: 50px;
+}
+
+#banner div p {
+    font-family: var(--fonte-texto);
+    color: var(--cor-texto);
+    font-size: 20px;
+}
