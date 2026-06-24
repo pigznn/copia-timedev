@@ -6,13 +6,13 @@
     <nav class = "menu">
 
     <ul>
-        <li><a href="index.php">Sobre</a></li>
+        <li><a href="index.php">SOBRE</a></li>
 
-        <li><a href="index.php">Portfólio</a></li>
+        <li><a href="index.php">PORTFÓLIO</a></li>
 
-        <li><a href="index.php">Serviços</a></li>
+        <li><a href="index.php">SERVIÇOS</a></li>
 
-        <li><a href="index.php">Contato</a></li>
+        <li><a href="index.php">CONTATO</a></li>
     </ul>
     
 

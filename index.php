@@ -32,6 +32,10 @@
     <!-- Reseta o estilo do site/  deixa zerado -->
     <link rel="stylesheet" href="css/reset.css">
 
+    <!-- Animação slick -->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+
     <!-- Estilo do site -->
     <link rel="stylesheet" href="css/style-m.css">
     <link rel="stylesheet" href="css/style-g.css">
@@ -39,14 +43,26 @@
 </head>
 
 <body>
-    <!-- Topo -->
-    <?php require_once('secoes_index/topo.php'); ?>
-    <!-- Fim Topo -->
+
      
     <!-- Conteúdo Principal -->
      
-    <!-- Banner -->
-    <?php require_once('secoes_index/banner.php'); ?>
-    <!-- Fim Banner -->
+    <!-- Sobre -->
+    <?php require_once('secoes_index/sobre.php'); ?>
+    <!-- Fim Sobre -->
+
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- Slick -->
+    <script src="js/slick.min.js"></script>
+
+    <!-- Script do grupo -->
+    <script src="js/m.js"></script>
+
+    <script src="js/g.js"></script>
+
+    <script src="js/t.js"></script>
 </body>
 </html>

@@ -1,4 +1,7 @@
-<header id="banner">    
+<section id="sobre">    
+    <!-- topo -->
+    <?php require_once('secoes_index/topo.php'); ?>
+
     <div>
         <h2>Agência Time Dev</h2>
         <h1>Tecnologia que <br>
@@ -10,4 +13,4 @@
         para conectar sua marca ao público <br>
         certo e gerar resultados reais</p>
     </div>
-</header>
+</section>
