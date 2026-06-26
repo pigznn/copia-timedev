@@ -1,16 +1,21 @@
-<section id="hero">    
-    <!-- topo -->
-    <?php require_once('secoes_index/topo.php'); ?>
+<body>
+    <header id="sobre">
+        <h1>Conheça a Agência</h1>
 
-    <div>
-        <h2>Agência Time Dev</h2>
-        <h1>Tecnologia que <br>
-            impulsiona seu <br>
-            negócio</h1>
-        <p>Sua Presença digital merece mais do que <br>
-        um site comum. Criamos soluções <br>
-        modernas, responsivas e estratégicas <br> 
-        para conectar sua marca ao público <br>
-        certo e gerar resultados reais</p>
-    </div>
-</section>
+        <div id="sobre-card1">
+            <p>Somos uma equipe focada em transformar ideias em experiências digitais. Através do desenvolvimento web, buscamos criar sites que transmitam profissionalismo, organização e confiança</p>
+        </div>
+
+        <div id="sobre-card2">
+            <p>Criamos sites personalizados que unem design, organização e desempenho. Cada projeto é desenvolvido pensando nas necessidades específicas de cada cliente</p>
+        </div>
+
+        <div id="sobre-card3">
+            <p>Acreditamos que toda empresa merece uma presença digital profissional. Por isso, buscamos desenvolver soluções que transmitam credibilidade e valorizem cada marca</p>
+        </div>
+        
+        <div id="sobre-card4">
+            <p>Valorizamos a comunicação, a dedicação e a atenção aos detalhes. Trabalhamos em parceria com nossos clientes para garantir que cada projeto alcance o resultado esperado</p>
+        </div>
+    </header>
+</body>

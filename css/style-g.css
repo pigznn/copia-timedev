@@ -43,3 +43,10 @@ VARIAVEIS DO TIME DEV
     --fonte-texto: "Poppins", sans-serif;
 }
 
+#especialidades {
+    background-image: url(../assets/Fundo_sobre.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}

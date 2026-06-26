@@ -48,8 +48,12 @@
     <!-- Conteúdo Principal -->
      
     <!-- Sobre -->
-    <?php require_once('secoes_index/sobre.php'); ?>
+    <?php require_once('secoes_index/hero.php'); ?>
     <!-- Fim Sobre -->
+
+    <!-- Especialidades -->
+    <?php require_once('secoes_index/especialidades.php'); ?>
+    <!-- Fim Especialidades -->
 
 
     <!-- Jquery -->
