@@ -50,3 +50,20 @@ VARIAVEIS DO TIME DEV
     background-position: center;
     width: 100%;
 }
+
+.especialidades-cards {
+    display: flex;
+}
+
+.especialidades-cards h1 {
+    position: relative;
+    font-size: 50px;
+    font-family: var(--fonte-titulo);
+    color: var(--cor-texto);
+    text-align: center;
+
+}
+
+.especialidades-cards span {
+    color: var(--cor-titulo);
+}

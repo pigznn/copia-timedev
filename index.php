@@ -52,7 +52,7 @@
     <!-- Fim Sobre -->
 
     <!-- Especialidades -->
-    <?php require_once('secoes_index/especialidades.php'); ?>
+    <?php require_once("secoes_index/especialidades.php"); ?>
     <!-- Fim Especialidades -->
 
 
