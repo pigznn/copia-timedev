@@ -119,7 +119,7 @@ VARIAVEIS DO TIME DEV
     margin-left: 200px;
 }
 
-#hero {
+.fundo {
     padding-top: 10px;
     background-image: url(../assets/Fundo_topo.png);
     background-repeat: no-repeat;

@@ -43,7 +43,13 @@ VARIAVEIS DO TIME DEV
     --fonte-texto: "Poppins", sans-serif;
 }
 
-#especialidades {
+.site{
+    margin: 0 auto;
+    max-width: 1500px;
+    width: 100%;
+}
+
+.fundo2 {
     background-image: url(../assets/Fundo_sobre.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,11 +57,8 @@ VARIAVEIS DO TIME DEV
     width: 100%;
 }
 
-.especialidades-cards {
-    display: flex;
-}
-
-.especialidades-cards h1 {
+#especialidades h1 {
+    bottom: 250px;
     position: relative;
     font-size: 50px;
     font-family: var(--fonte-titulo);
@@ -64,6 +67,47 @@ VARIAVEIS DO TIME DEV
 
 }
 
-.especialidades-cards span {
+#especialidades span {
     color: var(--cor-titulo);
+}
+
+.especialidades-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.especialidades-cards div {
+    position: relative;
+    bottom: 150px;
+    width: 300px;
+    height: 350px;
+    background-color: var(--cor-fundo);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.especialidades-cards img{
+    padding: 25px;
+    height: 40px;
+}
+
+.especialidades-cards h2{
+    font-size: 35px;
+    font-family: var(--fonte-titulo);
+    color: var(--cor-texto);
+}
+
+.especialidades-cards p{
+    font-size: 20px;
+    font-family: var(--fonte-texto);
+    color: var(--cor-texto);
+    text-align: left;
+    padding: 10px 40px 0;
+}
+
+.especialidades-cards div hr {
+    border: none;
+    border-top: 3px solid #000000;
+    opacity: 1;
+    height: 2px; 
 }
