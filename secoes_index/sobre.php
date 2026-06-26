@@ -1,4 +1,4 @@
-<section id="sobre">    
+<section id="hero">    
     <!-- topo -->
     <?php require_once('secoes_index/topo.php'); ?>
 

@@ -61,7 +61,7 @@
     <!-- Script do grupo -->
     <script src="js/m.js"></script>
 
-    <script src="js/g.js"></script>
+    <script src="js/g.js"></script
 
     <script src="js/t.js"></script>
 </body>

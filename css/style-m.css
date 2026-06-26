@@ -119,9 +119,9 @@ VARIAVEIS DO TIME DEV
     margin-left: 200px;
 }
 
-#sobre {
+#hero {
     padding-top: 10px;
-    background-image: url(../assets/Fundo_sobre.png);
+    background-image: url(../assets/Fundo_topo.png);
     background-repeat: no-repeat;
     background-size: cover;       /* Faz a imagem cobrir todo o espaço disponível */
     background-position: center;   /* Centraliza a imagem horizontal e verticalmente */
@@ -130,19 +130,19 @@ VARIAVEIS DO TIME DEV
 }
 
 
-#sobre div {
+#hero div {
     margin: 50px auto 0 auto;   
     max-width: 1500px;
 
 }
 
-#sobre div h2 {
+#hero div h2 {
     font-family: var(--fonte-titulo);
     color: var(--cor-titulo);
     font-size: 25px;
 }
 
-#sobre div h1 {
+#hero div h1 {
     margin-top: 20px;
     margin-bottom: 40px;
     font-family: var(--fonte-titulo);
@@ -150,7 +150,7 @@ VARIAVEIS DO TIME DEV
     font-size: 50px;
 }
 
-#sobre div p {
+#hero div p {
     font-family: var(--fonte-texto);
     color: var(--cor-texto);
     font-size: 20px;
