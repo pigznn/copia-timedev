@@ -4,14 +4,16 @@
     <article class="especialistas">
         <div>
         <h1>Thiago</h1>
-        <p></p>
+        <p>Especialista comprometido com a excelência e a satisfação dos clientes,
+             atuando com profissionalismo, criatividade e atenção aos detalhes para oferecer as melhores soluções.</p>
     </div>
     </article>
 
     <article class="especialistas">
             <div>
         <h1>Guilherme</h1>
-        <p></p>
+        <p>Especialista dedicado ao atendimento e desenvolvimento de soluções personalizadas, combinando conhecimento técnico,
+             inovação e compromisso para entregar resultados de excelência aos clientes.</p>
     </div>
     </article>
 
