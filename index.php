@@ -51,6 +51,17 @@
     <?php require_once('secoes_index/sobre.php'); ?>
     <!-- Fim Sobre -->
 
+    <!-- Especialistas -->
+    <?php require_once('secoes_index/especialistas.php'); ?>
+    <!-- Fim Especialistas -->
+
+    <!-- FAQ -->
+    <?php require_once('secoes_index/faq.php'); ?>
+    <!-- Fim FAQ -->
+
+    <!-- Footer -->
+    <?php require_once('secoes_index/footer.php'); ?>
+    <!-- Fim Footer -->
 
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
