@@ -1,19 +1,24 @@
-<section id="portfolio">
-    <div>
-        <img src="assets/site_thiago.png" alt="Site ClimaGL">
-        <h2>ClimaGL</h2>
-        <p>Desenvolvimento de um site institucional para a empresa Climagl, especializada em climatização e refrigeração. O projeto foi criado com foco em design responsivo, navegação intuitiva e apresentação profissional dos serviços oferecidos. A plataforma conta com páginas de serviços, avaliações, informações da empresa e canais de contato, proporcionando uma experiência clara e eficiente para os clientes</p>
-    </div>
+<section class="fundo3">
+    <section id="portfolio" class="site">
+        <h1>Projetos Desenvolvidos</h1>
+        <div class="portfolio-cards">
+            <div>
+                <img src="assets/site_thiago.png" alt="Site ClimaGL">
+                <h2>ClimaGL</h2>
+                <p>Site institucional para empresa de climatização e refrigeração. Desenvolvido com foco em design responsivo, navegação intuitiva e apresentação profissional. Inclui páginas de serviços, avaliações de clientes e canais de contato para uma experiência clara e eficiente</p>
+            </div>
 
-    <div>
-        <img src="assets/site_guilherme.png" alt="Site VivaBem Spa">
-        <h2>VivaBem Spa</h2>
-        <p>Projeto de site institucional desenvolvido para um spa fictício, com foco em bem-estar, relaxamento e experiências de autocuidado. O layout foi pensado para transmitir leveza, equilíbrio e acolhimento, valorizando uma estética limpa e sensorial para reforçar a proposta de saúde integrativa e massoterapia</p>
-    </div>
+            <div>
+                <img src="assets/site_guilherme.png" alt="Site VivaBem Spa">
+                <h2>VivaBem Spa</h2>
+                <p>Site institucional focado em bem-estar e autocuidado. O layout foi planejado para transmitir leveza e acolhimento, utilizando uma estética limpa e sensorial que valoriza os serviços de massoterapia e saúde integrativa</p>
+            </div>
 
-    <div>
-        <img src="assets/site_matheus.png" alt="Site Stella Castejon">
-        <h2>Stella Castejon</h2>
-        <p>Site institucional desenvolvido para a maquiadora Stella Castejon, com foco em apresentar seu trabalho, estilo e identidade profissional. O projeto valoriza sua presença digital, destacando seus serviços de maquiagem de forma elegante e acessível, além de facilitar o contato com clientes. A estrutura foi pensada para ser responsiva, intuitiva e visualmente alinhada ao universo da beleza</p>
-    </div>
+            <div>
+                <img src="assets/site_matheus.png" alt="Site Stella Castejon">
+                <h2>Stella Castejon</h2>
+                <p>Site institucional para maquiadora, desenvolvido para destacar seu portfólio e identidade profissional de forma elegante. Conta com estrutura responsiva e intuitiva, perfeitamente alinhada ao universo da beleza para facilitar o contato com novos clientes</p>
+            </div>
+        </div>
+    </section>
 </section>

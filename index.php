@@ -55,6 +55,14 @@
     <?php require_once("secoes_index/especialidades.php"); ?>
     <!-- Fim Especialidades -->
 
+    <!-- Sobre -->
+    <?php require_once('secoes_index/sobre.php') ?>
+    <!-- Fim Sobre -->
+
+    <!-- Portfólio -->
+    <?php require_once('secoes_index/portfolio.php') ?>
+    <!-- Fim Portfólio -->
+
 
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -65,7 +73,7 @@
     <!-- Script do grupo -->
     <script src="js/m.js"></script>
 
-    <script src="js/g.js"></script
+    <script src="js/g.js"></script>
 
     <script src="js/t.js"></script>
 </body>

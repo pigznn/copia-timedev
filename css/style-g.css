@@ -6,7 +6,7 @@ FONTES LOCAIS
 
 @font-face {
     font-family: "Poppins";
-    src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+    src: url("../fonts/Poppins-Light.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
 }
@@ -57,6 +57,13 @@ VARIAVEIS DO TIME DEV
     width: 100%;
 }
 
+.fundo3 {
+    background-image: url(../assets/Fundo_portfolio.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
 #especialidades h1 {
     bottom: 250px;
     position: relative;
@@ -81,23 +88,23 @@ VARIAVEIS DO TIME DEV
     bottom: 150px;
     width: 300px;
     height: 350px;
-    background-color: var(--cor-fundo);
+    background-color: #404040;
     text-align: center;
     border-radius: 10px;
 }
 
-.especialidades-cards img{
+.especialidades-cards img {
     padding: 25px;
     height: 40px;
 }
 
-.especialidades-cards h2{
+.especialidades-cards h2 {
     font-size: 35px;
     font-family: var(--fonte-titulo);
     color: var(--cor-texto);
 }
 
-.especialidades-cards p{
+.especialidades-cards p {
     font-size: 20px;
     font-family: var(--fonte-texto);
     color: var(--cor-texto);
@@ -107,7 +114,102 @@ VARIAVEIS DO TIME DEV
 
 .especialidades-cards div hr {
     border: none;
-    border-top: 3px solid #000000;
+    border-top: 5px solid #000000;
     opacity: 1;
-    height: 2px; 
+}
+
+#sobre h1 {
+    font-size: 50px;
+    font-family: var(--fonte-titulo);
+    color: var(--cor-texto);
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+/* --- CONTAINER DOS CARDS (GRID) --- */
+.sobre-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px 0px; 
+  align-items: center;
+}
+
+/* --- ESTILO BASE PARA TODOS OS CARDS --- */
+.card-direita, .card-esquerda {
+  background: linear-gradient(135deg, rgba(2, 115, 51, 0.5), rgba(1, 66, 30, 0.5));
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(0, 200, 100, 0.15);
+  padding: 35px;
+  width: 700px;
+}
+
+/* --- ALINHAMENTO ESPECÍFICO E BORDAS --- */
+
+/* --- LADO DIREITO --- */
+.card-direita {
+  grid-column: 2;
+  justify-self: end; 
+  text-align: right;
+  border-radius: 150px 0px 0px 150px; 
+}
+
+/* --- LADO ESQUERDO --- */
+.card-esquerda {
+  grid-column: 1;
+  justify-self: start;
+  text-align: left;
+  border-radius: 0px 150px 150px 0px;
+}
+
+/* --- FORÇA CADA CARD A FICAR EM UMA LINHA SEPARADA (ZIGUE-ZAGUE PERFEITO) --- */
+.sobre-cards > :nth-child(1) { grid-row: 1; }
+.sobre-cards > :nth-child(2) { grid-row: 2; }
+.sobre-cards > :nth-child(3) { grid-row: 3; }
+.sobre-cards > :nth-child(4) { grid-row: 4; }
+
+.sobre-cards p{
+    font-size: 25px;
+    font-family: var(--fonte-texto);
+    color: var(--cor-texto);
+    line-height: 1.5;
+}
+
+#portfolio h1{
+    font-size: 50px;
+    font-family: var(--fonte-titulo);
+    color: var(--cor-texto);
+    text-align: center;
+}
+
+.portfolio-cards {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.portfolio-cards div {
+    width: 400px;
+    min-height: 450px;
+    background-color: var(--cor-fundo2);
+    border-radius: 20px;
+}
+
+.portfolio-cards img {
+    width: 400px;
+    height: 200px;
+}
+
+.portfolio-cards h2{
+    font-size: 30px;
+    font-family: var(--fonte-titulo);
+    color: var(--cor-texto);
+    text-align: center;
+    padding-top: 25px;
+}
+
+.portfolio-cards p{
+    font-size: 20px;
+    font-family: var(--fonte-texto);
+    color: var(--cor-texto);
+    padding: 20px 50px;
 }
