@@ -174,6 +174,10 @@ VARIAVEIS DO TIME DEV
     line-height: 1.5;
 }
 
+.sobre-cards div:nth-child(4) {
+    margin-bottom: 200px;
+}
+
 #portfolio h1{
     font-size: 50px;
     font-family: var(--fonte-titulo);
