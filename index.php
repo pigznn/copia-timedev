@@ -51,7 +51,6 @@
     <?php require_once('secoes_index/hero.php'); ?>
     <!-- Fim Sobre -->
 
-<<<<<<< HEAD
     <!-- Especialistas -->
     <?php require_once('secoes_index/especialistas.php'); ?>
     <!-- Fim Especialistas -->
@@ -63,20 +62,6 @@
     <!-- Footer -->
     <?php require_once('secoes_index/footer.php'); ?>
     <!-- Fim Footer -->
-=======
-    <!-- Especialidades -->
-    <?php require_once("secoes_index/especialidades.php"); ?>
-    <!-- Fim Especialidades -->
-
-    <!-- Sobre -->
-    <?php require_once('secoes_index/sobre.php') ?>
-    <!-- Fim Sobre -->
-
-    <!-- Portfólio -->
-    <?php require_once('secoes_index/portfolio.php') ?>
-    <!-- Fim Portfólio -->
-
->>>>>>> a0c5cc2a642ef85ef1094196e74242b65c574098
 
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
