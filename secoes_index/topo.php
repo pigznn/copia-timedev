@@ -1,5 +1,3 @@
-
-
 <header id="topo">
     <h1>timedev</h1>
 
@@ -23,5 +21,6 @@
 
         <li><a href="linkedin.com"><img src="assets/linkedin.svg" alt="Linkedin Timedev"></a></li>
     </ul>
-</nav>
+    
+    </nav>
 </header>
