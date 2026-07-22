@@ -42,12 +42,11 @@ VARIAVEIS DO TIME DEV
     --fonte-titulo: "Montserrat", sans-serif;
     --fonte-texto: "Poppins", sans-serif;
 }
-
 #topo {
     margin: 0 auto;
     position: relative;
     top: auto;
-    max-width:1250px;
+    max-width: 1250px;
     height: 120px;
     background-color: #00000085;
     display: flex;
@@ -59,14 +58,14 @@ VARIAVEIS DO TIME DEV
     width: 65px;
     height: 60px;
     background-image: url(../assets/logo.svg);
-    margin: 30px ;
+    margin: 30px;
     text-indent: -9999px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-
 }
-#topo h2{
+
+#topo h2 {
     font-family: var(--fonte-texto);
 }
 
@@ -83,11 +82,11 @@ VARIAVEIS DO TIME DEV
     align-items: center;
 }
 
-#topo .menu ul{
+#topo .menu ul {
     display: flex;
 }
 
-#topo .redes_sociais{
+#topo .redes_sociais {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,12 +101,11 @@ VARIAVEIS DO TIME DEV
     border: none;
 } 
 
-#topo .redes_sociais img{
-    height: 30px ;
-    
+#topo .redes_sociais img {
+    height: 30px;
 }
 
-#topo .redes_sociais a{
+#topo .redes_sociais a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -115,7 +113,7 @@ VARIAVEIS DO TIME DEV
     max-height: 30px;
 }
 
-#topo .redes_sociais .whatsapp{
+#topo .redes_sociais .whatsapp {
     margin-left: 200px;
 }
 
@@ -123,35 +121,96 @@ VARIAVEIS DO TIME DEV
     padding-top: 10px;
     background-image: url(../assets/Fundo_topo.png);
     background-repeat: no-repeat;
-    background-size: cover;       /* Faz a imagem cobrir todo o espaço disponível */
-    background-position: center;   /* Centraliza a imagem horizontal e verticalmente */
-    width: 100%;                  /* Garante que ocupe toda a largura */
-    min-height: 100vh;            /* Opcional: faz a seção ter pelo menos a altura da tela */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
 }
 
+/* ==========================================================
+   SUBSTITUIÇÃO E NOVAS REGRAS PARA A HERO + PC CARROSSEL
+   ========================================================== */
 
-#hero div {
-    margin: 50px auto 0 auto;   
-    max-width: 1500px;
-
+/* Container Principal da Hero (Lado a Lado) */
+#hero .hero_conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 60px auto 0 auto; 
+    max-width: 1250px;
+    width: 90%;
+    gap: 40px;
 }
 
-#hero div h2 {
+/* Coluna da Esquerda - Textos */
+#hero .hero_texto {
+    flex: 1;
+}
+
+#hero .hero_texto h2 {
     font-family: var(--fonte-titulo);
     color: var(--cor-titulo);
     font-size: 25px;
 }
 
-#hero div h1 {
-    margin-top: 20px;
-    margin-bottom: 40px;
+#hero .hero_texto h1 {
+    margin-top: 15px;
+    margin-bottom: 25px;
     font-family: var(--fonte-titulo);
     color: var(--cor-titulo);
-    font-size: 50px;
+    font-size: 52px;
+    max-width: 600px;
+    line-height: 1.15;
 }
 
-#hero div p {
+#hero .hero_texto p {
     font-family: var(--fonte-texto);
     color: var(--cor-texto);
-    font-size: 20px;
+    font-size: 18px;
+    max-width: 500px;
+    line-height: 1.5;
+}
+
+/* Coluna da Direita - PC e Carrossel Slick */
+#hero .hero_pc {
+    position: relative;
+    flex: 1;
+    max-width: 600px;
+}
+
+.pc_moldura {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.pc_tela_carrossel {
+    position: absolute;
+    z-index: 1;
+    
+    /* Posição da tela dentro de pc.png (Ajuste se necessário) */
+    top: 11%;
+    left: 13%;
+    width: 74%;
+    height: 68%;
+    
+    overflow: hidden;
+    background-color: #000;
+}
+
+/* Força os elementos do Slick a preencherem a altura da tela */
+.slick_slider, 
+.slick_slider .slick-list, 
+.slick_slider .slick-track, 
+.slick_slider .slick-slide > div {
+    height: 100%;
+}
+
+.slick_slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

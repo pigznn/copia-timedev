@@ -47,9 +47,21 @@
      
     <!-- Conteúdo Principal -->
      
-    <!-- Sobre -->
+    <!-- Hero -->
     <?php require_once('secoes_index/hero.php'); ?>
+    <!-- Fim Hero -->
+
+    <!-- Especialidades -->
+    <?php require_once('secoes_index/especialidades.php'); ?>
+    <!-- Fim Especialidades -->
+    
+    <!-- Sobre -->
+    <?php require_once('secoes_index/sobre.php'); ?>
     <!-- Fim Sobre -->
+
+    <!-- Portfolio -->
+    <?php require_once('secoes_index/portfolio.php'); ?>
+    <!-- Fim Portfolio -->
 
     <!-- Especialistas -->
     <?php require_once('secoes_index/especialistas.php'); ?>
