@@ -129,12 +129,28 @@ VARIAVEIS DO TIME DEV
 
 .fundo {
     padding-top: 10px;
-    background-image: url(../assets/Fundo_topo.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    position: relative;
+    isolation: isolate;
     width: 100%;
     min-height: 100vh;
+    background-color: black;
+}
+
+/* A imagem some em transparência na base, sem adicionar cor sobre ela. */
+.fundo::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    inset: 0;
+    background: url(../assets/Fundo_topo.png) center / cover no-repeat fixed;
+    -webkit-mask-image: linear-gradient(to top, transparent 0%, #000 45%);
+    mask-image: linear-gradient(to top, transparent 0%, #000 45%);
+    pointer-events: none;
+}
+
+.fundo > * {
+    position: relative;
+    z-index: 1;
 }
 
 /* ==========================================================
