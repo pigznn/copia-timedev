@@ -244,3 +244,13 @@ VARIAVEIS DO TIME DEV
     height: 100%;
     object-fit: cover;
 }
+
+/* Fundo compartilhado das seções */
+.fundo-compartilhado {
+  background-image: url('../assets/fundo-compartilhado.png'); 
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding-top: 50px;
+  width: 100%;
+}

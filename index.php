@@ -60,19 +60,22 @@
     <!-- Fim Sobre -->
 
     <!-- Portfolio -->
-    <?php require_once('secoes_index/portfolio.php'); ?>
+    <div class="fundo-compartilhado">
+      <?php require_once('secoes_index/portfolio.php'); ?>
     <!-- Fim Portfolio -->
 
     <!-- Especialistas -->
-    <?php require_once('secoes_index/especialistas.php'); ?>
+      <?php require_once('secoes_index/especialistas.php'); ?>
     <!-- Fim Especialistas -->
 
     <!-- FAQ -->
-    <?php require_once('secoes_index/faq.php'); ?>
+      <?php require_once('secoes_index/faq.php'); ?>
     <!-- Fim FAQ -->
+    
 
     <!-- Footer -->
     <?php require_once('secoes_index/footer.php'); ?>
+    </div>
     <!-- Fim Footer -->
 
     <!-- Jquery -->

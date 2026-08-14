@@ -50,7 +50,6 @@ ESPECIALISTAS - SEÇÃO
 */
 
 #especialistas {
-    background-color: var(--cor-fundo);
     padding: 80px 20px;
     text-align: center;
 }
@@ -257,7 +256,6 @@ FAQ - SEÇÃO
 */
 
 #faq {
-    background-color: var(--cor-fundo);
     padding: 80px 20px;
     text-align: center;
 }
@@ -419,7 +417,6 @@ FOOTER - SEÇÃO
 */
 
 #footer {
-    background-color: var(--cor-fundo);
     border-top: 2px solid var(--cor-borda);
     padding: 60px 20px 30px;
 }
