@@ -17,9 +17,9 @@
                 
                 <div class="pc_tela_carrossel">
                     <div class="slick_slider">
-                        <div><img src="site_guilherme.png" alt="Projeto 1"></div>
-                        <div><img src="site_matheus.png" alt="Projeto 2"></div>
-                        <div><img src="site_thiago.png" alt="Projeto 3"></div>
+                        <div><img src="assets/site_guilherme.png" alt="Projeto 1"></div>
+                        <div><img src="assets/site_matheus.png" alt="Projeto 2"></div>
+                        <div><img src="assets/site_thiago.png" alt="Projeto 3"></div>
                     </div>
                 </div>
             </div>
