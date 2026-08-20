@@ -153,9 +153,9 @@ VARIAVEIS DO TIME DEV
     z-index: 1;
 }
 
-/* ==========================================================
-   SUBSTITUIÇÃO E NOVAS REGRAS PARA A HERO + PC CARROSSEL
-   ========================================================== */
+/* =================================
+   REGRAS PARA A HERO + PC CARROSSEL
+   ================================= */
 
 /* Container Principal da Hero (Lado a Lado) */
 #hero .hero_conteudo {
@@ -245,6 +245,29 @@ VARIAVEIS DO TIME DEV
     
     overflow: hidden;
     background-color: #000;
+}
+
+@media (max-width: 1200px) {
+    .pc_tela_carrossel {
+        /* Empurra a tela para dentro das bordas laterais do notebook */
+        left: 10%;       /* Ajuste esse % para centralizar na horizontal */
+        width: 80%;      /* Reduz a largura para não passar da borda do notebook */
+
+        /* Ajusta o topo e a altura da tela */
+        top: 5%;        /* Ajuste esse % para alinhar com o topo do display */
+        height: 75%;     /* Ajuste esse % para a base da tela não invadir o teclado */
+    }
+}
+
+/* Efeito verde sutil aplicada somente sobre os projetos exibidos na tela. */
+.pc_tela_carrossel::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+    background: rgba(47, 255, 134, 0.288);
+    mix-blend-mode: screen;
 }
 
 /* Força os elementos do Slick a preencherem a altura da tela */

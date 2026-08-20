@@ -13,8 +13,11 @@
 
             <!-- Lado Direito: Tela do PC com Carrossel Slick -->
             <div class="hero_pc">
-                <img src="assets/pc.png" alt="Tela do computador" class="pc_moldura">
-                
+                <picture>
+                <source media="(min-width: 1200px)" srcset="assets/pc.png">
+                <img src="assets/notebook.png" alt="Tela do computador" class="pc_moldura">
+                </picture>
+
                 <div class="pc_tela_carrossel">
                     <div class="slick_slider">
                         <div><img src="assets/site_guilherme.png" alt="Projeto 1"></div>
