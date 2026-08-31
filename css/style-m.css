@@ -293,3 +293,150 @@ VARIAVEIS DO TIME DEV
   padding-top: 50px;
   width: 100%;
 }
+#servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px auto 0 auto; 
+    padding: 50px 0;
+    background-color: var(--cor-fundo);
+}
+
+#servicos .conteudo-servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 150px;
+    margin: 0 auto;
+    max-width: 1250px;
+    width: 90%;
+}
+
+
+
+#servicos .card {
+    position: relative;
+    padding: 60px 40px 40px 40px;
+    background-color: rgba(26, 26, 26, 0.4);
+    border-radius: 65px;
+    max-width: 1250px;
+    width: 100%;
+    box-sizing: border-box;
+
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+}
+
+/* Criando a borda recortada via pseudo-elemento */
+#servicos .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 65px;
+    border: 5px solid var(--cor-destaque);
+    pointer-events: none;
+
+    /* RECORTE DA BORDA: Abre um espaço de aproximadamente 160px no centro do topo */
+    /* Pontos: topo-esquerdo -> antes do corte -> desce no corte -> lado do corte -> topo-direito -> resto do box */
+    clip-path: polygon(
+        0% 0%, 
+        calc(50% - 80px) 0%, 
+        calc(50% - 80px) 15px, 
+        calc(50% + 80px) 15px, 
+        calc(50% + 80px) 0%, 
+        100% 0%, 
+        100% 100%, 
+        0% 100%
+    );
+}
+
+#servicos .icone-serv {
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent !important; /* Totalmente transparente */
+    padding: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Tamanho travado do ícone */
+#servicos .icone-serv img {
+    width: 120px ;
+    height: 120px ;
+    object-fit: contain;
+    display: block;
+}
+
+#servicos .card h2 {
+    display: none;
+}
+
+#servicos .card p {
+    font-family: var(--fonte-texto);
+    color: var(--cor-texto);
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+}
+
+
+/* Botão "Entrar em contato" */
+#servicos .container-btn {
+    margin-top: 60px;
+}
+
+#servicos .btn-contato {
+    display: inline-block;
+    padding: 14px 32px;
+    border: 2px solid var(--cor-destaque);
+    border-radius: 12px;
+    color: #ffffff;
+    font-family: var(--fonte-texto);
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+#servicos .btn-contato:hover {
+    background-color: var(--cor-destaque);
+    color: #000000;
+}
+
+/* ===================================================
+   FUNDO ANIMADO (THREE.JS)
+   =================================================== */
+
+/* Configuração do fundo escuro */
+body {
+  overflow-x: hidden;
+  background-color: #050505;
+}
+
+/* O canvas gerado pelo Three.js fica fixo no fundo de toda a página */
+canvas {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* Fica atrás do conteúdo HTML */
+  pointer-events: none; /* Impede que o fundo bloqueie o clique do mouse */
+}
+
+/* Deixa a seção transparente para o 3D aparecer ao fundo */
+#servicos {
+  position: relative;
+  z-index: 1;
+  background-color: transparent !important;
+}
