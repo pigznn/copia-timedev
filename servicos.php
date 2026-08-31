@@ -37,6 +37,8 @@
     <link rel="stylesheet" href="css/slick-theme.css">
 
     <!-- Estilo do site -->
+    <link rel="stylesheet" href="css/style-g.css">
+    <link rel="stylesheet" href="css/style-t.css">
     <link rel="stylesheet" href="css/style-m.css">
 </head>
 
@@ -45,9 +47,9 @@
      
     <!-- Conteúdo Principal -->
      
-    <!-- Hero -->
-    <?php require_once('secoes_index/hero.php'); ?>
-    <!-- Fim Hero -->
+    <!-- menu -->
+    <?php require_once('secoes_index/topo.php'); ?>
+    <!-- Fim menu -->
 
     <!-- Serviços -->
 
@@ -55,9 +57,14 @@
 
     <!-- Fim Serviços -->
 
+    <!-- FAQ -->
+      <?php require_once('secoes_index/faq.php'); ?>
+    <!-- Fim FAQ -->
+    
+
     <!-- Footer -->
     <?php require_once('secoes_index/footer.php'); ?>
-    </div>
+    
     <!-- Fim Footer -->
 
     <!-- Jquery -->
@@ -67,6 +74,10 @@
     <script src="js/slick.min.js"></script>
 
     <!-- Script do grupo -->
+    <script src="js/g.js"></script>
+
+    <script src="js/t.js"></script>
+
     <script src="js/m.js"></script>
 </body>
 </html>

@@ -8,7 +8,7 @@
 
         <li><a href="index.php">PORTFÓLIO</a></li>
 
-        <li><a href="index.php">SERVIÇOS</a></li>
+        <li><a href="servicos.php">SERVIÇOS</a></li>
 
         <li><a href="index.php">CONTATO</a></li>
     </ul>
