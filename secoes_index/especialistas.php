@@ -6,7 +6,7 @@
         <article class="especialistas">
             <div>
                 <div class="especialistas-photo">
-                    <img src="" alt="Thiago">
+                    <img src="assets/foto-thiago.png" alt="Thiago">
                 </div>
                 <div class="especialistas-info">
                     <h1>Thiago</h1>
