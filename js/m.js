@@ -50,7 +50,7 @@ function initCubos3D() {
     document.body.appendChild(renderer.domElement);
 
     // 3. Luzes
-    const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
+    const ambientLight = new THREE.AmbientLight(0xffffff, 1.6);
     scene.add(ambientLight);
 
     const mainLight = new THREE.DirectionalLight(0xffffff, 1.8);
