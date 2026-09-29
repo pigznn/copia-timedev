@@ -440,3 +440,55 @@ canvas {
   z-index: 1;
   background-color: transparent !important;
 }
+
+.footer_localizacao .footer-content {
+    background-color: var(--cor-titulo);
+    color: #1A1A1A;
+    padding: 20px 15px;
+    border-radius: 8px;
+}
+
+.footer_localizacao .footer-content p {
+    color: #1A1A1A;
+    font-weight: 600;
+        font-family: var(--fonte-texto);
+    font-size: 0.95rem;
+    
+    line-height: 1.8;
+    margin: 8px 0;
+}
+
+#footer_serv {
+    position: relative;
+    z-index: 10;
+    background-color: none;
+    border-top: 2px solid var(--cor-borda);
+    padding: 60px 20px 30px;
+}
+
+.footer_cont {
+    background-color: none;
+}
+
+.footer-cont h3 {
+font-family: var(--fonte-titulo);
+    font-size: 1.3rem
+20.8px
+;
+    color: var(--cor-titulo);
+    font-weight: 900;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.footer_cont p {
+    font-family: var(--fonte-texto);
+    font-size: 0.95rem;
+    justify-content: center;
+    text-align: center;
+    color: var(--cor-texto);
+    line-height: 1.8;
+    margin: 8px 0;
+}

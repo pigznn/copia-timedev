@@ -93,7 +93,7 @@
     <!-- Fim FAQ -->
 
     <!-- Footer -->
-    <?php require_once('secoes_index/footer.php'); ?>
+    <?php require_once('secoes_index/footer_servicos.php'); ?>
     <!-- Fim Footer -->
 
     <!-- JS / Bibliotecas -->
