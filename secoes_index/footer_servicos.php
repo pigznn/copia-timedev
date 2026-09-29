@@ -51,11 +51,7 @@
 
     <!-- Copyright -->
     <div class="footer-copyright">
-        <svg class="footer-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="2"/>
-            <path d="M50 20 L60 40 L50 50 L40 40 Z" fill="currentColor"/>
-            <path d="M50 50 L60 60 L50 80 L40 60 Z" fill="currentColor"/>
-        </svg>
+        <img class="footer-logo" src="assets/logo.svg" alt="Logo Time Dev">
         <p>&copy; Todos os Direitos Reservados | Agência Time Dev 2026</p>
     </div>
 </footer>

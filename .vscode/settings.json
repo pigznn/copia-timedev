@@ -28,5 +28,6 @@
         "activityBarTop.activeBorder": "#15202b",
         "statusBar.inactiveBackground": "#26940d"
     },
-    "peacock.color": "#26940d"
+    "peacock.color": "#26940d",
+    "claudeCodeChat.permissions.yoloMode": false
 }

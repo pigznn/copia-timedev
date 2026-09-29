@@ -464,27 +464,26 @@ canvas {
 #footer_serv {
     position: relative;
     z-index: 10;
-    background-color: none;
+    background-color: transparent;
     border-top: 2px solid var(--cor-borda);
     padding: 60px 20px 30px;
 }
 
 .footer_cont {
-    background-color: none;
+    background-color: transparent;
 }
 
-.footer-cont h3 {
-font-family: var(--fonte-titulo);
-    font-size: 1.3rem
-20.8px
-;
+/* Corrigido de .footer-cont para .footer_cont e ajustado o font-size */
+.footer_cont h3 {
+    text-align: center;
+    font-family: var(--fonte-titulo);
+    font-size: 1.3rem;
     color: var(--cor-titulo);
     font-weight: 900;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-
 
 .footer_cont p {
     font-family: var(--fonte-texto);
