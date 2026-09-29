@@ -318,7 +318,7 @@ VARIAVEIS DO TIME DEV
 #servicos .card {
     position: relative;
     padding: 60px 40px 40px 40px;
-    background-color: rgba(26, 26, 26, 0.4);
+    background-color: rgba(65, 63, 63, 0.438);
     border-radius: 65px;
     max-width: 1250px;
     width: 100%;
@@ -383,7 +383,9 @@ VARIAVEIS DO TIME DEV
 #servicos .card p {
     font-family: var(--fonte-texto);
     color: var(--cor-texto);
-    font-size: 25px;
+    font-size: 16px;
+    letter-spacing: 5px;
+    line-height: 25px;
     padding: 10px;
     text-align: center;
     margin: 0;

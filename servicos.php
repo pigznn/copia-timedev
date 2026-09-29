@@ -52,7 +52,7 @@
                     <img src="assets/landing_page.svg" alt="Ícone de Landing Page">
                 </div>
                 <h2>Landing Pages</h2>
-                <p>Desenvolvo páginas estratégicas, ultrarrápidas e 100% otimizadas para transformar o seu tráfego pago ou orgânico em clientes reais. Foco total em uma experiência fluida, design moderno e copywriting estruturado para maximizar suas vendas e captação de leads.</p>
+                <p>Desenvolvemos páginas estratégicas, ultrarrápidas e 100% otimizadas para transformar o seu tráfego pago ou orgânico em clientes reais. Foco total em uma experiência fluida, design moderno e copywriting estruturado para maximizar suas vendas e captação de leads.</p>
             </div>
 
             <div class="card">
