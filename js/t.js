@@ -104,3 +104,33 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// CONTATO - entrada suave do formulário e dos campos
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('.contato-formulario');
+
+    if (!form) return;
+
+    const items = form.querySelectorAll('.contato-status, .campo-contato, .contato-enviar');
+    items.forEach((item, index) => {
+        item.style.setProperty('--contato-atraso', `${Math.min(index * 90, 630)}ms`);
+    });
+
+    form.classList.add('contato-revelar');
+
+    if (!('IntersectionObserver' in window)) {
+        form.classList.add('contato-visivel');
+        return;
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                form.classList.add('contato-visivel');
+                observer.disconnect();
+            }
+        });
+    }, { threshold: 0.16 });
+
+    observer.observe(form);
+});

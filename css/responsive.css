@@ -1,0 +1,518 @@
+/* Ajustes compartilhados para as páginas e seções do site. */
+img,
+svg {
+    max-width: 100%;
+}
+
+.site {
+    width: min(100% - 40px, 1500px);
+    margin-inline: auto;
+}
+
+@media (max-width: 1100px) {
+    #topo {
+        width: calc(100% - 40px);
+        height: auto;
+        min-height: 100px;
+        box-sizing: border-box;
+        padding: 12px 18px;
+        gap: 14px;
+    }
+
+    #topo h1 {
+        flex: 0 0 60px;
+        margin: 10px;
+    }
+
+    #topo .menu {
+        flex: 1 1 0;
+        min-width: 0;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    #topo .menu ul:first-child {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #topo .menu a {
+        padding: 12px;
+        font-size: 17px;
+    }
+
+    #topo .redes_sociais {
+        gap: 10px;
+        margin: 0;
+    }
+
+    #topo .redes_sociais li {
+        margin: 0;
+    }
+
+    #hero .hero_conteudo {
+        gap: 24px;
+        margin-top: 44px;
+    }
+
+    #hero .hero_texto h1 {
+        font-size: clamp(36px, 5vw, 52px);
+    }
+
+    .especialidades-cards {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+        padding: 0 20px;
+    }
+
+    .especialidades-cards div {
+        bottom: 0;
+        width: auto;
+        height: auto;
+        min-height: 320px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    #especialidades h1 {
+        bottom: 0;
+        margin: 0 20px 36px;
+        font-size: clamp(36px, 5vw, 50px);
+    }
+
+    #especialidades {
+        padding: 60px 0;
+    }
+
+    .sobre-cards {
+        gap: 28px;
+        padding: 0 24px;
+    }
+
+    .card-direita,
+    .card-esquerda {
+        width: min(100%, 700px);
+        box-sizing: border-box;
+        padding: 28px;
+    }
+
+    .sobre-cards p {
+        font-size: 20px;
+    }
+
+    .sobre-cards div:nth-child(4) {
+        margin-bottom: 80px;
+    }
+
+    .portfolio-cards {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        justify-items: center;
+        padding-inline: 24px;
+    }
+
+    .portfolio-cards div {
+        width: 100%;
+        max-width: 440px;
+    }
+
+    #servicos .conteudo-servicos {
+        width: calc(100% - 48px);
+        gap: 100px;
+    }
+
+    #servicos .card {
+        padding-inline: 30px;
+    }
+
+    #servicos .card p {
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 768px) {
+    .site {
+        width: calc(100% - 32px);
+    }
+
+    #topo {
+        width: calc(100% - 24px);
+        min-height: 0;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+        padding: 12px;
+        border-radius: 16px;
+    }
+
+    #topo h1 {
+        flex: 0 0 auto;
+        width: 55px;
+        height: 50px;
+        margin: 0 auto;
+    }
+
+    #topo .menu {
+        width: 100%;
+        flex: 0 0 auto;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    #topo .menu ul:first-child {
+        width: 100%;
+        gap: 2px;
+    }
+
+    #topo .menu ul:first-child li {
+        flex: 1 1 auto;
+        text-align: center;
+    }
+
+    #topo .menu a {
+        display: block;
+        padding: 10px 8px;
+        font-size: 14px;
+    }
+
+    #topo .redes_sociais .social-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    #topo .redes_sociais .social-icon svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    .fundo {
+        min-height: 0;
+        padding-bottom: 56px;
+    }
+
+    #hero .hero_conteudo {
+        width: calc(100% - 36px);
+        flex-direction: column;
+        align-items: stretch;
+        margin-top: 42px;
+        gap: 32px;
+    }
+
+    #hero .hero_texto {
+        text-align: center;
+    }
+
+    #hero .hero_texto h2 {
+        font-size: 20px;
+    }
+
+    #hero .hero_texto h1 {
+        max-width: 620px;
+        margin: 12px auto 18px;
+        font-size: clamp(34px, 8vw, 46px);
+    }
+
+    #hero .hero_texto p {
+        margin-inline: auto;
+        font-size: 16px;
+    }
+
+    #hero .hero_pc {
+        width: min(100%, 560px);
+        margin-inline: auto;
+    }
+
+    .fundo-compartilhado {
+        padding-top: 28px;
+    }
+
+    #especialidades {
+        padding: 48px 0;
+    }
+
+    #especialidades h1 {
+        margin: 0 16px 28px;
+        font-size: clamp(30px, 7vw, 42px);
+    }
+
+    .especialidades-cards {
+        gap: 16px;
+        padding: 0 16px;
+    }
+
+    .especialidades-cards div {
+        min-height: 0;
+        padding: 18px 14px;
+    }
+
+    .especialidades-cards img {
+        box-sizing: content-box;
+        max-width: 70px;
+        height: 40px;
+        padding: 14px;
+    }
+
+    .especialidades-cards h2 {
+        font-size: 24px;
+    }
+
+    .especialidades-cards p {
+        padding: 8px 4px 0;
+        font-size: 16px;
+    }
+
+    #sobre {
+        padding: 36px 0;
+    }
+
+    #sobre h1,
+    #portfolio h1 {
+        margin: 0 16px 32px;
+        font-size: clamp(30px, 7vw, 42px);
+    }
+
+    .sobre-cards {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 0 16px;
+    }
+
+    .card-direita,
+    .card-esquerda {
+        grid-column: 1;
+        grid-row: auto !important;
+        justify-self: stretch;
+        width: 100%;
+        padding: 24px;
+        border-radius: 28px;
+        text-align: left;
+    }
+
+    .sobre-cards p {
+        font-size: 17px;
+    }
+
+    .sobre-cards div:nth-child(4) {
+        margin-bottom: 0;
+    }
+
+    #portfolio {
+        padding: 40px 0;
+    }
+
+    .portfolio-cards {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        padding: 0 16px;
+    }
+
+    .portfolio-cards div {
+        max-width: 520px;
+    }
+
+    .portfolio-cards div:hover {
+        transform: none;
+    }
+
+    .portfolio-cards p,
+    .portfolio-cards div:hover p {
+        max-height: none;
+        opacity: 1;
+    }
+
+    #servicos {
+        margin-top: 24px;
+        padding: 42px 0;
+    }
+
+    #servicos .conteudo-servicos {
+        width: calc(100% - 36px);
+        gap: 76px;
+    }
+
+    #servicos .card {
+        padding: 58px 24px 28px;
+        border-radius: 36px;
+    }
+
+    #servicos .card::before {
+        border-radius: 36px;
+        clip-path: none;
+    }
+
+    #servicos .icone-serv {
+        top: -56px;
+    }
+
+    #servicos .icone-serv img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #servicos .card p {
+        padding: 0;
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    #servicos .container-btn {
+        margin: 36px 18px 0;
+        text-align: center;
+    }
+
+    #especialistas,
+    #faq {
+        padding-block: 48px;
+    }
+
+    .faq-header {
+        margin-bottom: 32px;
+    }
+
+    #footer .footer-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
+
+    .footer-copyright {
+        flex-wrap: wrap;
+    }
+
+    .contato-intro {
+        min-height: 500px;
+    }
+
+    .contato-chamada {
+        margin-top: 100px;
+        padding-inline: 16px;
+        box-sizing: border-box;
+    }
+
+    .contato-chamada h1 {
+        font-size: 32px;
+    }
+
+    .contato-chamada p {
+        font-size: 19px;
+    }
+
+    .contato-campos {
+        grid-template-columns: 1fr;
+    }
+
+    .campo-largo {
+        grid-column: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .site {
+        width: calc(100% - 24px);
+    }
+
+    #topo {
+        width: calc(100% - 16px);
+    }
+
+    #topo .menu ul:first-child {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: 100%;
+    }
+
+    #topo .menu a {
+        padding: 9px 4px;
+        font-size: 12px;
+    }
+
+    #hero .hero_conteudo {
+        width: calc(100% - 28px);
+        margin-top: 32px;
+    }
+
+    #hero .hero_texto h1 {
+        font-size: clamp(30px, 9vw, 38px);
+    }
+
+    .especialidades-cards {
+        grid-template-columns: 1fr;
+        padding-inline: 12px;
+    }
+
+    .especialidades-cards div {
+        padding: 18px;
+    }
+
+    .especialidades-cards p {
+        font-size: 15px;
+    }
+
+    .card-direita,
+    .card-esquerda {
+        padding: 20px;
+    }
+
+    .sobre-cards p {
+        font-size: 16px;
+    }
+
+    .portfolio-cards h2 {
+        font-size: 24px;
+    }
+
+    .portfolio-cards p {
+        padding: 10px 18px 22px;
+        font-size: 16px;
+    }
+
+    #servicos .conteudo-servicos {
+        width: calc(100% - 28px);
+        gap: 68px;
+    }
+
+    #servicos .card {
+        padding: 52px 18px 24px;
+        border-radius: 28px;
+    }
+
+    #servicos .card::before {
+        border-radius: 28px;
+    }
+
+    #servicos .card p {
+        font-size: 16px;
+    }
+
+    #footer .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contato-intro {
+        min-height: 470px;
+    }
+
+    .contato-chamada {
+        margin-top: 76px;
+    }
+
+    .contato-chamada h1 {
+        margin-bottom: 18px;
+        font-size: 28px;
+    }
+
+    .contato-chamada p {
+        font-size: 16px;
+    }
+
+    .contato-area {
+        margin-top: -42px;
+        padding-inline: 12px;
+    }
+
+    .contato-formulario {
+        padding: 20px 14px;
+    }
+}

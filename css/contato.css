@@ -21,57 +21,6 @@
     filter: grayscale(1);
 }
 
-.pagina-contato #topo {
-    width: calc(100% - 32px);
-    max-width: 960px;
-    height: 92px;
-    border-radius: 0;
-    background: rgba(0, 0, 0, .58);
-}
-
-.pagina-contato #topo h1 {
-    flex: 0 0 65px;
-    margin: 16px 20px;
-}
-
-.pagina-contato #topo .menu {
-    margin: auto;
-}
-
-.pagina-contato #topo .menu ul:first-child {
-    align-items: center;
-}
-
-.pagina-contato #topo .menu a {
-    padding: 12px 9px;
-    font-size: 16px;
-}
-
-.pagina-contato #topo .menu li:last-child a {
-    color: var(--cor-destaque, #0cf25d);
-}
-
-.pagina-contato #topo .redes_sociais {
-    display: flex;
-    gap: 8px;
-    margin: 0 20px 0 16px;
-}
-
-.pagina-contato #topo .redes_sociais li {
-    margin: 0;
-}
-
-.pagina-contato #topo .redes_sociais .social-icon {
-    width: 38px;
-    height: 38px;
-    padding: 0;
-}
-
-.pagina-contato #topo .redes_sociais .social-icon svg {
-    width: 21px;
-    height: 21px;
-}
-
 .contato-chamada {
     max-width: 1250px;
     width: calc(100% - 32px);
@@ -94,21 +43,78 @@
 
 .contato-area {
     position: relative;
+    isolation: isolate;
     z-index: 2;
     margin-top: -77px;
     padding: 0 16px 112px;
 }
 
+.contato-area::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 6%;
+    left: 50%;
+    width: min(760px, 90vw);
+    height: min(880px, 190vw);
+    border-radius: 50%;
+    background: radial-gradient(ellipse, rgba(12, 242, 93, .42), rgba(3, 166, 60, .2) 42%, transparent 72%);
+    filter: blur(42px);
+    transform: translateX(-50%);
+    pointer-events: none;
+    animation: contato-brilho 6s ease-in-out infinite alternate;
+}
+
 .contato-formulario {
     position: relative;
+    z-index: 1;
     box-sizing: border-box;
     width: min(540px, 100%);
     min-height: 616px;
     margin: 0 auto;
     padding: 28px 28px 24px;
-    border: 4px solid var(--cor-destaque, #0cf25d);
+    border: 2px solid var(--cor-destaque, #0cf25d);
     border-radius: 14px;
     background: #303030;
+    box-shadow:
+        0 0 28px 5px rgba(12, 242, 93, .34),
+        0 0 72px 14px rgba(3, 166, 60, .24);
+}
+
+.contato-formulario.contato-revelar {
+    opacity: 0;
+    transform: translateY(34px) scale(.98);
+    transition: opacity .75s ease, transform .75s cubic-bezier(.2, .75, .25, 1);
+}
+
+.contato-formulario.contato-revelar.contato-visivel {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+.contato-formulario.contato-revelar .campo-contato,
+.contato-formulario.contato-revelar .contato-enviar,
+.contato-formulario.contato-revelar .contato-status {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity .5s ease, transform .5s ease;
+    transition-delay: var(--contato-atraso, 0ms);
+}
+
+.contato-formulario.contato-revelar .contato-enviar {
+    transition: opacity .5s ease, transform .22s ease, box-shadow .22s ease, background-color .22s ease, color .22s ease;
+}
+
+.contato-formulario.contato-revelar.contato-visivel .campo-contato,
+.contato-formulario.contato-revelar.contato-visivel .contato-enviar,
+.contato-formulario.contato-revelar.contato-visivel .contato-status {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes contato-brilho {
+    from { opacity: .62; scale: .94; }
+    to { opacity: 1; scale: 1.04; }
 }
 
 .contato-campos {
@@ -190,12 +196,39 @@
     color: var(--cor-destaque, #0cf25d);
     font: 900 14px var(--fonte-titulo, sans-serif);
     cursor: pointer;
+    transition: transform .22s ease, box-shadow .22s ease, background-color .22s ease, color .22s ease;
 }
 
 .contato-enviar:hover,
-.contato-enviar:focus-visible {
+.contato-enviar:focus-visible,
+.contato-formulario.contato-revelar.contato-visivel .contato-enviar:hover,
+.contato-formulario.contato-revelar.contato-visivel .contato-enviar:focus-visible {
     background: var(--cor-destaque, #0cf25d);
     color: #1a1a1a;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(12, 242, 93, .25);
+}
+
+.contato-enviar:active,
+.contato-formulario.contato-revelar.contato-visivel .contato-enviar:active {
+    transform: translateY(0) scale(.97);
+    box-shadow: 0 3px 10px rgba(12, 242, 93, .2);
+}
+
+.pagina-contato #topo .social-icon,
+.pagina-contato #footer .social-icon {
+    transition: transform .22s ease, box-shadow .22s ease, background-color .22s ease, color .22s ease;
+}
+
+.pagina-contato #topo .social-icon:hover,
+.pagina-contato #footer .social-icon:hover {
+    transform: translateY(-3px) scale(1.06);
+    box-shadow: 0 7px 18px rgba(12, 242, 93, .22);
+}
+
+.pagina-contato #topo .social-icon:active,
+.pagina-contato #footer .social-icon:active {
+    transform: scale(.96);
 }
 
 .contato-status {
@@ -272,13 +305,6 @@
 
 @media (max-width: 768px) {
     .contato-intro { min-height: 500px; }
-    .pagina-contato #topo { height: 78px; }
-    .pagina-contato #topo h1 { margin: 10px; }
-    .pagina-contato #topo .menu { margin: auto 8px auto auto; }
-    .pagina-contato #topo .menu a { padding: 10px 5px; font-size: 12px; }
-    .pagina-contato #topo .redes_sociais { gap: 5px; margin: 0 10px 0 4px; }
-    .pagina-contato #topo .redes_sociais .social-icon { width: 32px; height: 32px; }
-    .pagina-contato #topo .redes_sociais .social-icon svg { width: 18px; height: 18px; }
     .contato-chamada { margin-top: 145px; }
     .contato-chamada h1 { margin-bottom: 25px; font-size: 32px; }
     .contato-chamada p { font-size: 20px; }
@@ -288,12 +314,6 @@
 }
 
 @media (max-width: 480px) {
-    .pagina-contato #topo { width: calc(100% - 20px); }
-    .pagina-contato #topo h1 { flex-basis: 48px; width: 48px; height: 48px; }
-    .pagina-contato #topo .menu a { padding: 8px 3px; font-size: 9px; }
-    .pagina-contato #topo .redes_sociais { gap: 3px; margin: 0 6px 0 2px; }
-    .pagina-contato #topo .redes_sociais .social-icon { width: 27px; height: 27px; border-width: 1px; }
-    .pagina-contato #topo .redes_sociais .social-icon svg { width: 16px; height: 16px; }
     .contato-chamada { margin-top: 130px; }
     .contato-chamada p { font-size: 17px; }
     .contato-formulario { padding: 22px 16px; }
@@ -301,4 +321,22 @@
     .campo-contato { font-size: 12px; }
     .campo-contato input, .campo-contato select, .campo-contato textarea { font-size: 12px; }
     .campo-contato textarea { height: 190px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .contato-area::before { animation: none; }
+    .contato-formulario.contato-revelar,
+    .contato-formulario.contato-revelar .campo-contato,
+    .contato-formulario.contato-revelar .contato-enviar,
+    .contato-formulario.contato-revelar .contato-status {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .contato-enviar,
+    .pagina-contato #topo .social-icon,
+    .pagina-contato #footer .social-icon {
+        transition: none;
+    }
 }

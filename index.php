@@ -40,6 +40,7 @@
     <link rel="stylesheet" href="css/style-m.css">
     <link rel="stylesheet" href="css/style-g.css">
     <link rel="stylesheet" href="css/style-t.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>

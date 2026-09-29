@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (trim((string)($_POST['website'] ?? '')) !== '') {
         $status = 'Não foi possível enviar sua mensagem. Tente novamente.';
     } elseif (
-        $formData['nome'] === '' || $formData['empresa'] === '' ||
+        $formData['nome'] === '' ||
         !filter_var($formData['email'], FILTER_VALIDATE_EMAIL) ||
         $formData['telefone'] === '' || !in_array($formData['servico'], $servicos, true) ||
         $formData['mensagem'] === ''
@@ -22,15 +22,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $empresa = preg_replace('/[\r\n]+/', ' ', $formData['empresa']);
         $telefone = preg_replace('/[\r\n]+/', ' ', $formData['telefone']);
         $assunto = 'Novo contato pelo site Time Dev';
-        $corpo = "Nome: {$nome}\nEmpresa: {$empresa}\nE-mail: {$formData['email']}\nTelefone: {$telefone}\nServiço: {$formData['servico']}\n\nMensagem:\n{$formData['mensagem']}";
+        $empresaLinha = $empresa !== '' ? $empresa : 'Não informada';
+        $corpo = "Nome: {$nome}\nEmpresa: {$empresaLinha}\nE-mail: {$formData['email']}\nTelefone: {$telefone}\nServiço: {$formData['servico']}\n\nMensagem:\n{$formData['mensagem']}";
         $cabecalhos = [
-            'From: Time Dev <no-reply@timedev.com.br>',
+            'From: Time Dev <contatotimedev@gmail.com>',
             'Reply-To: ' . $formData['email'],
             'Content-Type: text/plain; charset=UTF-8',
             'X-Mailer: PHP/' . phpversion(),
         ];
 
-        if (mail('contatotimedev@gmail.com', $assunto, $corpo, implode("\r\n", $cabecalhos))) {
+        if (!function_exists('mail')) {
+            $emailEnviado = false;
+            error_log('Falha ao enviar formulário de contato: a função mail() do PHP está desabilitada.');
+        } else {
+            $emailEnviado = @mail(
+                'contatotimedev@gmail.com',
+                $assunto,
+                $corpo,
+                implode("\r\n", $cabecalhos)
+            );
+
+            if (!$emailEnviado) {
+                error_log('Falha ao enviar formulário de contato: verifique a configuração SMTP/sendmail do PHP.');
+            }
+        }
+
+        if ($emailEnviado) {
             $status = 'Mensagem enviada! Em breve entraremos em contato.';
             foreach ($formData as $campo => $valor) {
                 $formData[$campo] = '';
@@ -57,6 +74,7 @@ function contatoEsc($valor) {
     <link rel="stylesheet" href="css/style-t.css">
     <link rel="stylesheet" href="css/style-m.css">
     <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body class="pagina-contato">
     <main>
@@ -83,8 +101,8 @@ function contatoEsc($valor) {
                         <input id="nome" name="nome" type="text" placeholder="Nome:" value="<?= contatoEsc($formData['nome']) ?>" autocomplete="name" required>
                     </label>
                     <label class="campo-contato" for="empresa">
-                        <span>Nome de sua Empresa</span>
-                        <input id="empresa" name="empresa" type="text" placeholder="Nome da empresa:" value="<?= contatoEsc($formData['empresa']) ?>" autocomplete="organization" required>
+                        <span>Nome da sua empresa (opcional)</span>
+                        <input id="empresa" name="empresa" type="text" placeholder="Nome da empresa (opcional):" value="<?= contatoEsc($formData['empresa']) ?>" autocomplete="organization">
                     </label>
                     <label class="campo-contato" for="email">
                         <span>Seu Email</span>
@@ -113,5 +131,6 @@ function contatoEsc($valor) {
         </section>
     </main>
     <?php require_once('secoes_index/footer.php'); ?>
+    <script src="js/t.js"></script>
 </body>
 </html>
