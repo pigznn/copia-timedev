@@ -4,7 +4,7 @@
         <div class="footer-section">
             <h3>Localização</h3>
             <div class="footer-content">
-                <p>Avenida Marechal Tito,<br>1500 - São Miguel<br>Paulista, São Paulo - SP,<br>05115-100</p>
+                <p>Avenida Marechal Tito,<br>1500 - São Miguel<br>Paulista, São Paulo - SP,<br>08115-100</p>
             </div>
         </div>
 
@@ -49,11 +49,7 @@
 
     <!-- Copyright -->
     <div class="footer-copyright">
-        <svg class="footer-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="2"/>
-            <path d="M50 20 L60 40 L50 50 L40 40 Z" fill="currentColor"/>
-            <path d="M50 50 L60 60 L50 80 L40 60 Z" fill="currentColor"/>
-        </svg>
+        <img class="footer-logo" src="assets/logo.svg" alt="Logo Time Dev">
         <p>&copy; Todos os Direitos Reservados | Agência Time Dev 2026</p>
     </div>
 </footer>
