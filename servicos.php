@@ -83,7 +83,7 @@
 
         <!-- Botão de Contato Final -->
         <div class="container-btn">
-            <a href="#contato" class="btn-contato">Entrar em contato</a>
+            <a href="contato.php" class="btn-contato">Entrar em contato</a>
         </div>
     </section>
     <!-- Fim Serviços -->

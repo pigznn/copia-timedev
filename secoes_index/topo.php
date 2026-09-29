@@ -6,7 +6,7 @@
             <li><a href="index.php#sobre">SOBRE</a></li>
             <li><a href="index.php#portfolio">PORTFÓLIO</a></li>
             <li><a href="servicos.php">SERVIÇOS</a></li>
-            <li><a href="#footer">CONTATO</a></li>
+            <li><a href="contato.php">CONTATO</a></li>
         </ul>
 
         <ul class="redes_sociais">
