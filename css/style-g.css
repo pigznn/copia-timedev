@@ -193,6 +193,7 @@ VARIAVEIS DO TIME DEV
     font-family: var(--fonte-titulo);
     color: var(--cor-texto);
     text-align: center;
+    margin-top: 50px;
 }
 
 .portfolio-cards {
@@ -257,4 +258,300 @@ VARIAVEIS DO TIME DEV
 .portfolio-cards div:hover p {
     max-height: 300px; /* Revela todo o conteúdo */
     opacity: 1;
+}
+
+/* =========================
+   PÁGINA PORTFOLIO (portfolio.php) - CARROSSEL SLICK
+   Mesmo visual dos cards da index, mas com classes
+   próprias pra não mexer na index
+========================= */
+
+.portfolio-carrossel {
+    padding-top: 50px;
+    margin: 0 70px;
+}
+
+/* Subtítulo abaixo do h1 */
+.portfolio-subtitulo {
+    font-size: 20px;
+    font-family: var(--fonte-texto);
+    color: var(--cor-texto);
+    text-align: center;
+    opacity: 0.7;
+    margin-top: 10px;
+}
+
+/* Espaço pro card crescer no hover sem ser cortado */
+.portfolio-carrossel .slick-list {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+}
+
+/* Todos os cards com a mesma altura */
+.portfolio-carrossel .slick-track {
+    display: flex;
+    align-items: stretch;
+}
+
+.portfolio-carrossel .slick-slide {
+    height: auto;
+}
+
+/* O .portfolio-item é o próprio slide do Slick: só dá o espaçamento.
+   O visual do card fica no .portfolio-card de dentro */
+.portfolio-item {
+    display: flex !important; /* o Slick coloca inline-block inline */
+    padding: 0 15px;
+}
+
+/* Card em estado normal */
+.portfolio-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-fundo2);
+    border-radius: 20px;
+    overflow: hidden;
+    opacity: 0.5;
+    transform: scale(0.92);
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.4s ease, opacity 0.4s ease;
+    cursor: pointer;
+}
+
+/* Card do meio em destaque */
+.portfolio-item.slick-center .portfolio-card {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* CARD CRESCE AO PASSAR O MOUSE */
+.portfolio-card:hover {
+    opacity: 1;
+    transform: scale(1.05);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Imagem + overlay "Ver prévia" */
+.portfolio-imagem {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-imagem img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.portfolio-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(26, 26, 26, 0.6);
+    font-size: 20px;
+    font-family: var(--fonte-titulo);
+    color: var(--cor-texto);
+    letter-spacing: 1px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.portfolio-card:hover .portfolio-imagem img {
+    transform: scale(1.06);
+}
+
+.portfolio-card:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+/* Parte de texto do card */
+.portfolio-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px 30px 30px;
+}
+
+.portfolio-tag {
+    font-size: 13px;
+    font-family: var(--fonte-texto);
+    color: var(--cor-destaque);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    background: rgba(26, 26, 26, 0.45);
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+
+.portfolio-info h2 {
+    font-size: 28px;
+    font-family: var(--fonte-titulo);
+    color: var(--cor-texto);
+    margin: 15px 0 10px;
+}
+
+.portfolio-info p {
+    font-size: 18px;
+    font-family: var(--fonte-texto);
+    color: var(--cor-texto);
+    line-height: 1.5;
+    opacity: 0.85;
+    margin: 0 0 25px;
+}
+
+/* Botão "Ver projeto" sempre no rodapé do card */
+.portfolio-botao {
+    margin-top: auto;
+    font-size: 16px;
+    font-family: var(--fonte-texto);
+    color: var(--cor-texto);
+    border: 2px solid var(--cor-texto);
+    border-radius: 30px;
+    padding: 10px 22px;
+    transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.portfolio-botao span {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-card:hover .portfolio-botao {
+    background: var(--cor-texto);
+    color: var(--cor-fundo2);
+}
+
+.portfolio-card:hover .portfolio-botao span {
+    transform: translateX(5px);
+}
+
+/* Chamada pro contato no final da seção */
+.portfolio-cta {
+    text-align: center;
+    margin: 80px 0 40px;
+}
+
+.portfolio-cta h3 {
+    font-size: 32px;
+    font-family: var(--fonte-titulo);
+    color: var(--cor-texto);
+    margin-bottom: 25px;
+}
+
+.portfolio-cta-botao {
+    display: inline-block;
+    font-size: 18px;
+    font-family: var(--fonte-texto);
+    color: var(--cor-texto2);
+    background: var(--cor-destaque);
+    padding: 15px 40px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-cta-botao:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(12, 242, 93, 0.45);
+}
+
+/* Setas e bolinhas */
+/* Botão redondo neutro (só fica verde no hover) */
+.portfolio-carrossel .slick-prev,
+.portfolio-carrossel .slick-next {
+    z-index: 3;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 2px solid rgba(242, 242, 242, 0.6);
+    background: rgba(26, 26, 26, 0.7);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-carrossel .slick-prev { left: -55px; }
+.portfolio-carrossel .slick-next { right: -55px; }
+
+/* Clicar/focar não muda a cor */
+.portfolio-carrossel .slick-prev:focus,
+.portfolio-carrossel .slick-next:focus {
+    background: rgba(26, 26, 26, 0.7);
+    outline: none;
+}
+
+/* Hover: fica verde e dá um brilho */
+.portfolio-carrossel .slick-prev:hover,
+.portfolio-carrossel .slick-next:hover {
+    background: var(--cor-fundo2);
+    border-color: var(--cor-destaque);
+    box-shadow: 0 0 18px rgba(12, 242, 93, 0.45);
+    transform: translateY(-50%) scale(1.08);
+}
+
+/* Troca a seta padrão por uma setinha (chevron) feita com borda */
+.portfolio-carrossel .slick-prev:before,
+.portfolio-carrossel .slick-next:before {
+    content: '';
+    display: block;
+    width: 9px;
+    height: 9px;
+    margin: 0 auto;
+    border-top: 2px solid var(--cor-texto);
+    border-right: 2px solid var(--cor-texto);
+    opacity: 1;
+}
+
+.portfolio-carrossel .slick-prev:before {
+    transform: translateX(2px) rotate(-135deg);
+}
+
+.portfolio-carrossel .slick-next:before {
+    transform: translateX(-2px) rotate(45deg);
+}
+
+.portfolio-carrossel .slick-dots {
+    bottom: -20px;
+}
+
+.portfolio-carrossel .slick-dots li button:before {
+    font-size: 12px;
+    color: var(--cor-texto);
+}
+
+.portfolio-carrossel .slick-dots li.slick-active button:before {
+    color: var(--cor-destaque);
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .portfolio-carrossel {
+        margin: 0 10px;
+    }
+
+    .portfolio-imagem img {
+        height: 220px;
+    }
+
+    .portfolio-info {
+        padding: 20px;
+    }
+
+    .portfolio-info h2 {
+        font-size: 24px;
+    }
+
+    .portfolio-info p {
+        font-size: 16px;
+    }
+
+    .portfolio-cta h3 {
+        font-size: 24px;
+    }
 }
