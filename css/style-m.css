@@ -318,7 +318,7 @@ VARIAVEIS DO TIME DEV
 #servicos .card {
     position: relative;
     padding: 60px 40px 40px 40px;
-    background-color: rgba(26, 26, 26, 0.4);
+    background-color: rgba(65, 63, 63, 0.438);
     border-radius: 65px;
     max-width: 1250px;
     width: 100%;
@@ -383,7 +383,9 @@ VARIAVEIS DO TIME DEV
 #servicos .card p {
     font-family: var(--fonte-texto);
     color: var(--cor-texto);
-    font-size: 25px;
+    font-size: 16px;
+    letter-spacing: 5px;
+    line-height: 25px;
     padding: 10px;
     text-align: center;
     margin: 0;
@@ -440,4 +442,55 @@ canvas {
   position: relative;
   z-index: 1;
   background-color: transparent !important;
+}
+
+.footer_localizacao .footer-content {
+    background-color: var(--cor-titulo);
+    color: #1A1A1A;
+    padding: 20px 15px;
+    border-radius: 8px;
+}
+
+.footer_localizacao .footer-content p {
+    color: #1A1A1A;
+    font-weight: 600;
+        font-family: var(--fonte-texto);
+    font-size: 0.95rem;
+    
+    line-height: 1.8;
+    margin: 8px 0;
+}
+
+#footer_serv {
+    position: relative;
+    z-index: 10;
+    background-color: transparent;
+    border-top: 2px solid var(--cor-borda);
+    padding: 60px 20px 30px;
+}
+
+.footer_cont {
+    background-color: transparent;
+}
+
+/* Corrigido de .footer-cont para .footer_cont e ajustado o font-size */
+.footer_cont h3 {
+    text-align: center;
+    font-family: var(--fonte-titulo);
+    font-size: 1.3rem;
+    color: var(--cor-titulo);
+    font-weight: 900;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer_cont p {
+    font-family: var(--fonte-texto);
+    font-size: 0.95rem;
+    justify-content: center;
+    text-align: center;
+    color: var(--cor-texto);
+    line-height: 1.8;
+    margin: 8px 0;
 }

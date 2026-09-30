@@ -18,8 +18,8 @@
         <article class="especialistas">
             <div>
                 <div class="especialistas-photo">
-                    <img src="" alt="Guilherme">
-                </div>
+                    <img src="assets/foto-guilherme.jpg" alt="Guilherme">
+               </div>
                 <div class="especialistas-info">
                     <h1>Guilherme</h1>
                     <p>Especialista dedicado ao atendimento e desenvolvimento de soluções personalizadas, combinando conhecimento técnico, inovação e compromisso para entregar resultados de excelência aos clientes.</p>
@@ -30,7 +30,7 @@
         <article class="especialistas">
             <div>
                 <div class="especialistas-photo">
-                    <img src="" alt="Matheus">
+                    <img src="assets/foto-matheus.jpg" alt="Matheus">
                 </div>
                 <div class="especialistas-info">
                     <h1>Matheus</h1>
