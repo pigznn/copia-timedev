@@ -101,7 +101,7 @@ function contatoEsc($valor) {
                         <input id="nome" name="nome" type="text" placeholder="Nome:" value="<?= contatoEsc($formData['nome']) ?>" autocomplete="name" required>
                     </label>
                     <label class="campo-contato" for="empresa">
-                        <span>Nome da sua empresa (opcional)</span>
+                        <span>Nome da sua empresa</span>
                         <input id="empresa" name="empresa" type="text" placeholder="Nome da empresa (opcional):" value="<?= contatoEsc($formData['empresa']) ?>" autocomplete="organization">
                     </label>
                     <label class="campo-contato" for="email">
